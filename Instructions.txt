@@ -1,0 +1,35 @@
+1. **Installer Pygame**
+   - Installe la bibliothèque : `pip install pygame`.
+
+2. **Initialiser Pygame**
+   - Initialise la fenêtre du jeu et définis les dimensions (largeur/hauteur).
+
+3. **Définir les éléments du jeu**
+   - Crée le **serpent** (une liste de coordonnées pour représenter les segments).
+   - Crée la **nourriture** (coordonnées générées aléatoirement).
+   - Gère la **direction** du serpent (droite, gauche, haut, bas).
+
+4. **Gérer les événements du clavier**
+   - Utilise les événements Pygame pour détecter les touches fléchées (haut, bas, gauche, droite).
+
+5. **Déplacer le serpent**
+   - Met à jour les coordonnées du serpent à chaque tick en fonction de la direction.
+   - Ajoute un nouveau segment en tête et retire celui en queue pour simuler le mouvement.
+
+6. **Détecter les collisions**
+   - Collision avec les murs (limites de la fenêtre).
+   - Collision avec soi-même (si la tête du serpent touche un autre segment).
+
+7. **Gérer la nourriture**
+   - Si le serpent mange la nourriture (coordonnées de la tête du serpent = nourriture), ajoute un segment supplémentaire sans retirer celui en queue.
+   - Généré une nouvelle nourriture à un endroit aléatoire.
+
+8. **Affichage**
+   - Affiche le serpent et la nourriture à chaque rafraîchissement d'écran (tick).
+
+9. **Gérer la fin du jeu**
+   - Vérifie les conditions de défaite (collision).
+   - Affiche un écran de fin ou redémarre le jeu.
+
+10. **Boucle de jeu principale**
+   - Met en place une boucle principale qui rafraîchit l'affichage, gère les mouvements, les collisions, et les événements.
